@@ -1,0 +1,8 @@
+a=input('请输入a的值');
+b=inpu('请输入b的值');
+x0=1.0;
+n=1;
+x1=a/(b+x0);
+R=abs(x1-x0);
+while
+    
