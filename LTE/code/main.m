@@ -4,8 +4,8 @@ clear all;
 close all;
 format long
 %参数设置
-num_prb=25;
-num_subframe=15; %总时隙，可修改范围[1-100],查看效果
+num_prb=15;
+num_subframe=30; %总时隙，可修改范围[1-100],查看效果
 num_symbol=14;  %一个子帧的OFDM符号数 
 num_subcarrier=12;%每个RB携带的子载波数
 num_ue_add=10;  %每次增加的用户个数
