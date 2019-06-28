@@ -22,10 +22,38 @@ def main():
     logging.info("road_path is %s" % (road_path))
     logging.info("cross_path is %s" % (cross_path))
     logging.info("answer_path is %s" % (answer_path))
+ 
+ 
+# to read input file 
+    def get_data(fpath):
+        '''
+        para: filename file type
+        return: sourses in tuple-list type
+        '''
+        with open(fpath, 'r') as f:
+            f.readline()
+            sourses = [eval(sourse) for sourse in f.readlines()]
+            f.close()
 
-# to read input file
+        return sourses
+    
+    crosses = get_data(cross_path)
+    print(crosses[0])
+    
 # process
+
+
 # to write output file
+    def put_answer(answer, path):
+        '''
+        para: answer tuple list
+        rt: none output answer.txt
+        '''
+        with open(path, 'w+') as f:
+            for item in answer:
+                f.writelines(str(item))
+                f.writelines('\n')
+                f.close()
 
 
 if __name__ == "__main__":
