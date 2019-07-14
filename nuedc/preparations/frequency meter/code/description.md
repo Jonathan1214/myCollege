@@ -50,10 +50,9 @@
 1. STC89C52单片机的两个定时器一个用作计数器，一个用作定时器。
 2. 定时器计数1s，则这个过程中，计数器记下来的数就是信号的频率。
 3. 然后用在LCD1602显示频率值，理论上来说，效果应该是这样的
-![理想中频率计显示](../../../images/frequency_meter_ideal.jpg)，
+<div align="center"><img width="400" height="400" alt="理想中频率计显示" src="../../../images/frequency_meter_ideal.jpg"/></div>
 然而事实上却是这样的
-![事实](../../../images/frequency_meter_fail.jpg)
-得不到要的结果。
+<div align="center"><img width="400" height="400" alt="事实" src="../../../images/frequency_meter_fail.jpg"/></div>
 
 上面就是实际实验得到的结果，我想不到哪儿出了问题，也许单片机根本就不能够完成这个任务，往坏的方面想，高频频率计可不仅仅只有测频率这一个部分，况且待测信号的幅度变化的跨度还不算小，放大这个高频信号时还要进行增益的自动控制，使得不同大小幅度的信号都能被放大到合适的大小，以便后面测频电路的正常工作。
 
