@@ -24,7 +24,6 @@ class HTMLParser:
             i += 1
             page_result.append(self.parse_a_user(user_tag))
         return [len(user_tags), page_result]
-        pass
 
     def parse_a_user(self, user_tag):
         ''' 解析当前页面的一个用户 '''
