@@ -10,4 +10,24 @@
 
 ### [习题](./chapter2/exercise2.md)
 
-## 3. 基本概念
+## [3. 基本概念](./chapter3/basic_concepts.md/#基本概念)
+
+### 词法约定：
+
++ 参考 C 语言，对空白的要求类似，注释方法相同。
++ [数字声明](./chapter3/basic_concepts.md/#数字声明)：指明位数的数字和不指明位数的数字。
+
+### [数据类型](./chapter3/basic_concepts.md/#数据类型)
+
+### 系统任务和编译指令
+
+显示信息：`$display(p1, p2)`，类似 printf。
+
+监视信息：`$monitor(p1, p2)`。只需调用一次。
+
+暂停和结束：`stop` 和 `finish`。
+
+编译指令：『`define』，类似 C 中的 #define，用于定义常量。
+『`include』类似 C 中的 #include，用于引用文件。
+
+### [习题](./chapter3/exercise3.md)
